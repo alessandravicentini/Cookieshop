@@ -25,5 +25,19 @@ h1, h2, h3, h4, h5, h6, p, span{
     cursor: default;
 }
 
+:root{
+    --toastify-toast-width: 250px;
+    --toastify-font-family: 'Space Mono', monospace;
+    --toastify-text-color-light: white;
+}
+
+.Toastify__toast--success {
+    background-color: green;
+}
+
+.Toastify__toast--warning {
+    background-color: tomato;
+}
+
 `
   
