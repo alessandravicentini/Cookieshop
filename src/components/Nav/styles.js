@@ -13,12 +13,6 @@ align-items: center;
 
 padding: 10px;
 
-background-color: ${(props) => props.theme.backgroundColor};
-color: ${(props) => props.theme.color};
-
-transition: background-color 0.8s linear, color 0.5s linear;
-
-
 > div{
     width: 20%;
 
