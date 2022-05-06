@@ -1,4 +1,3 @@
-
 import { Routes } from "./routes"
 
 import { CartProvider } from "./providers/cart";

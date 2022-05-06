@@ -29,7 +29,10 @@ export const Nav = ({showButton}) => {
                 <h2>COOKIESHOP</h2>
             </Logo>
             <div>
-                <FaLightbulb size={22} onClick={() => setCurrentTheme(oppositeTheme())} />
+                <FaLightbulb size={22} onClick={() => {
+                    setCurrentTheme(oppositeTheme())
+                    localStorage.setItem('theme', JSON.stringify(oppositeTheme()))
+                    }} />
                 <MdShoppingCart size={25} onClick={() => history.push('/cart')}/>
                 <span>{cart.length}</span>
                 {showButton ? <AiFillHome size={25} onClick={() => history.push('/')}/> : <></>}
