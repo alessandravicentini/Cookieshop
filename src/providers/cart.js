@@ -1,11 +1,11 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext([])
 
 export const CartProvider = ({ children }) => {
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) || [])
 
-      const addToCart = (item) => {
+    const addToCart = (item) => {
         setCart([...cart, item])
     }
 
@@ -18,7 +18,12 @@ export const CartProvider = ({ children }) => {
         setCart(newCart)
     }
 
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart))
+
+    }, [cart])
+
     return (
         <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>{children}</CartContext.Provider>
     )
-}
+} 

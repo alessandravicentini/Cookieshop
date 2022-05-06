@@ -50,7 +50,7 @@ margin-bottom: 20px;
 
 overflow: hidden;
 
-border-bottom: 1px solid #222;
+border-bottom: 1px solid ${(props) => props.theme.color};;
 
 ::-webkit-scrollbar{
     background-color: transparent;

@@ -14,25 +14,25 @@ width: 80%;
         width: 80px;
     }
 
-    > svg{
-        width: 50px;
+    svg{
+        width: 20px;
 
         cursor: pointer;
-        transition: 0.3s;
+        border-radius: 50%;
+    }
+    
+    svg:hover{
+        transition: 0.5s;
+        
+        color: ${(props) => props.theme.hover.color};
+        background-color: ${(props) => props.theme.hover.backgroundColor};
     }
 
-    > svg:hover{
-        transform: scale(1.3);
-    }
-
-    > svg:active{
-        color: firebrick;
-    }
 
     p, span{
         flex: 1;
 
-        border-bottom: 1px solid #222;
+        border-bottom: 1px solid ${(props) => props.theme.color};
     }
 
     span{

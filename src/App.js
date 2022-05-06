@@ -1,19 +1,24 @@
-import { GlobalStyle } from "./styles/global"
 
 import { Routes } from "./routes"
+
 import { CartProvider } from "./providers/cart";
 import { ProductsProvider } from "./providers/products";
+import { ThemeTypeProvider } from "./providers/theme";
 
 
 function App() {
+
   return (
     <>
+    
+    <ThemeTypeProvider>
     <CartProvider>
     <ProductsProvider>
-    <GlobalStyle />
-    <Routes />
+      <Routes />
     </ProductsProvider>
     </CartProvider>
+    </ThemeTypeProvider>
+
     </>
   );
 }

@@ -13,6 +13,12 @@ align-items: center;
 
 padding: 10px;
 
+background-color: ${(props) => props.theme.backgroundColor};
+color: ${(props) => props.theme.color};
+
+transition: background-color 0.8s linear, color 0.5s linear;
+
+
 > div{
     width: 20%;
 
@@ -26,6 +32,8 @@ padding: 10px;
         transition: 0.3s;
 
         margin-left: 30px;
+
+        color: ${(props) => props.theme.color};
     }
 
     svg:hover{

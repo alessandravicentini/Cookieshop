@@ -11,7 +11,7 @@ height: 400px;
 
 margin: 10px;
 
-border-bottom: 1px solid #222;
+border-bottom: 1px solid ${(props) => props.theme.color};
 
 > img{
     width: 90%;
