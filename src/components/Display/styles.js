@@ -10,5 +10,6 @@ align-items: flex-start;
 width: 70%;
 
 margin: auto;
+margin-bottom: 70px;
 
 `

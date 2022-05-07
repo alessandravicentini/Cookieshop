@@ -41,5 +41,19 @@ h1, h2, h3, h4, h5, h6, p, span{
     font-size: small;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: ${(props) => props.theme.backgroundColor};
+}
+
+::-webkit-scrollbar-thumb {
+  background: ${(props) => props.theme.color};
+}
+
+
+
 `
   
