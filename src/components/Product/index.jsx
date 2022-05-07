@@ -24,7 +24,7 @@ const Product = ({ product }) => {
       <p>{priceFormat}</p>
         <MdShoppingCart onClick={() => {
           addToCart(product)
-          toast.success('cookie adicionado!', {icon: <FaCookieBite/>})
+          toast.success(`cookie ${name} adicionado!`, {icon: <FaCookieBite/>})
           }} />
       </Content>
     </Container>

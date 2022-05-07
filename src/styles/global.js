@@ -33,10 +33,12 @@ h1, h2, h3, h4, h5, h6, p, span{
 
 .Toastify__toast--success {
     background-color: green;
+    font-size: small;
 }
 
 .Toastify__toast--warning {
     background-color: tomato;
+    font-size: small;
 }
 
 `

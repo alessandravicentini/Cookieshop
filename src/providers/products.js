@@ -8,7 +8,7 @@ export const ProductsProvider = ({ children }) => {
     const [products, setProducts] = useState(cookies)
 
     return (
-        <ProductsContext.Provider value={{ products }}>{children}</ProductsContext.Provider>
+        <ProductsContext.Provider value={{ products, setProducts }}>{children}</ProductsContext.Provider>
     )
 }
 

@@ -23,11 +23,11 @@ export const CartProduct = ({ product }) => {
             <span>Qtd: {productQtt}</span>
                 <AiOutlineMinusCircle size={20} onClick={() => {
                     removeFromCart(product)
-                    toast.warning('cookie removido!', {icon: <FaCookieBite/>})
+                    toast.warning(`cookie ${product.name} removido!`, {icon: <FaCookieBite/>})
                     }}/>
                 <AiOutlinePlusCircle size={20} onClick={() => {
                     addToCart(product)
-                    toast.success('cookie adicionado!', {icon: <FaCookieBite/>})
+                    toast.success(`cookie ${product.name} adicionado!`, {icon: <FaCookieBite/>})
                     }}/>
             </div>
         </Container>
